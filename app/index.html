@@ -23,16 +23,26 @@
         </p>
 
 
-        <div class="center">
-            <table>
-                <tr ng-repeat="row in state">
-                    <td ng-repeat="cell in row track by $index"
-                        ng-class="{pink: cell, blue: !cell}" class="cell"
-                        ng-click="step($parent.$index, $index)">
-                    </td>
-                </tr>
-            </table>
+        <table>
+            <tr ng-repeat="row in state">
+                <td ng-repeat="cell in row track by $index"
+                    ng-class="{pink: !cell, blue: cell}" class="cell"
+                    ng-click="step($parent.$index, $index)">
+                </td>
+            </tr>
+        </table>
+
+        <div ng-class="{visible: success, invisible: !success" class="centerize">
+            Победа.
         </div>
+
+
+        <div class="centerize">
+            <button class="flatten" ng-click="reload()">
+                Начать сначала
+            </button>
+        </div>
+
     </div>
 </head>
 <body>

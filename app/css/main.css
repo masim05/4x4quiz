@@ -15,3 +15,23 @@
     width: 50%;
     margin: 0 auto;
 }
+
+.centerize {
+    text-align: center;
+}
+
+.flatten {
+    margin: 20px auto;
+    font-size: 17px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #FFFFCC;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}

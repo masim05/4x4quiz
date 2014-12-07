@@ -4,12 +4,33 @@ angular.module('quiz', [])
       $scope.state[i][j] = !$scope.state[i][j];
     };
 
+    var checkSuccess = function () {
+      var success = true;
+      for (var i = 0; i < 4; i++) {
+        for (var j = 0; j < 4; j++) {
+          success = success && $scope.state[i][j];
+          if (!success) {
+            break
+          }
+        }
+        if (!success) {
+          break
+        }
+      }
+
+      if (success) {
+        $scope.success = true
+      }
+      ;
+    };
+
     $scope.state = [
       [true, false, true, true],
       [false, false, false, true],
       [false, false, true, false],
       [true, false, true, true]
     ];
+    $scope.success = false;
 
     $scope.step = function (i, j) {
       change(i, j);
@@ -27,5 +48,11 @@ angular.module('quiz', [])
         }
         change(_i, j);
       }
+
+      checkSuccess();
+    };
+
+    $scope.reload = function () {
+      window.location.reload(false);
     };
   }])

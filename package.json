@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.7.4"
+  },
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8000 ./html"
   }
 }

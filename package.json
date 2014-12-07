@@ -1,0 +1,15 @@
+{
+  "name": "Quiz",
+  "version": "0.0.0",
+  "description": "16 switch quiz.",
+  "main": "",
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.7.4"
+  }
+}

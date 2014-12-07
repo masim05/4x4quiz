@@ -1,0 +1,16 @@
+.pink {
+    background-color: #F6CEE3;
+}
+
+.blue {
+    background-color: #58FAF4;
+}
+
+.red {
+    background-color: red;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+}

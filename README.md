@@ -1,11 +1,11 @@
 4x4quiz
 =======
 
-Quiz about 16 switches.
+Головоломка про 16 переключателей.
 
-To launch the application just run command:
+Для того, чтобы запустить приложение, выполните команду:
 ```bash
 npm start
 ```
 
-Then open a browser at http://localhost:8000 and follow the instructions.
+Затем откройте в браузере страницу http://localhost:8000 и следуйте инструкциям.

@@ -7,15 +7,32 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Задача про 16 переключателей</title>
 
-    <div ng-controller="Main">
-        <table>
-            <tr ng-repeat="row in state">
-                <td ng-repeat="cell in row track by $index"
-                    ng-class="{pink: cell, blue: !cell}" class="cell"
-                    ng-click="step($parent.$index, $index)">
-                </td>
-            </tr>
-        </table>
+    <div ng-controller="Main" class="center">
+
+        <h3>
+            Задача про 16 переключателей
+        </h3>
+
+        <p>
+            Переключатели расположены в квардате 4х4, каджый переключатель имеет ровно два
+            состояния: голубое и розовое.
+            При нажатии на клетку все переключатели, стоящие с ней в одном ряду или одной
+            строке, меняют свое состояние.
+
+            Добейтесь, чтобы все переключатели имели голубой цвет.
+        </p>
+
+
+        <div class="center">
+            <table>
+                <tr ng-repeat="row in state">
+                    <td ng-repeat="cell in row track by $index"
+                        ng-class="{pink: cell, blue: !cell}" class="cell"
+                        ng-click="step($parent.$index, $index)">
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </head>
 <body>

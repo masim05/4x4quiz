@@ -25,10 +25,10 @@ angular.module('quiz', [])
     };
 
     $scope.state = [
-      [true, false, true, true],
-      [false, false, false, true],
-      [false, false, true, false],
-      [true, false, true, true]
+      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
+      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
+      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
+      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)]
     ];
     $scope.success = false;
 

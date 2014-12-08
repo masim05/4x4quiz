@@ -24,13 +24,16 @@ angular.module('quiz', [])
       ;
     };
 
-    $scope.state = [
-      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
-      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
-      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
-      [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)]
-    ];
-    $scope.success = false;
+    $scope.init = function () {
+      $scope.state = [
+        [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
+        [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
+        [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)],
+        [(Math.random() < .5), (Math.random() < .5), (Math.random() < .5), (Math.random() < .5)]
+      ];
+
+      $scope.success = false;
+    };
 
     $scope.step = function (i, j) {
       change(i, j);
